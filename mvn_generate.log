@@ -1,0 +1,29 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:2.4:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:2.4:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO] 
+[INFO] --- maven-archetype-plugin:2.4:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-webapp:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: /Users/si255323/knight
+[INFO] Parameter: package, Value: org.soumya.narayan.aiqs
+[INFO] Parameter: groupId, Value: org.soumya.narayan.aiqs
+[INFO] Parameter: artifactId, Value: auto-insurance-quote-system
+[INFO] Parameter: packageName, Value: org.soumya.narayan.aiqs
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: /Users/si255323/knight/auto-insurance-quote-system
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.838 s
+[INFO] Finished at: 2015-11-24T15:13:48+05:30
+[INFO] Final Memory: 16M/155M
+[INFO] ------------------------------------------------------------------------
