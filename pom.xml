@@ -16,6 +16,11 @@
 
 		<javax.servlet.api.version>3.0.1</javax.servlet.api.version>
 		<org.springframework.version>4.0.4.RELEASE</org.springframework.version>
+		<org.springframework.data.version>1.8.0.RELEASE</org.springframework.data.version>
+		
+		<com.h2database.version>1.4.186</com.h2database.version>
+		<org.hibernate.version>5.0.0.Final</org.hibernate.version>
+		<com.mchange.c3p0.version>0.9.5</com.mchange.c3p0.version>
 
 		<junit.version>4.11</junit.version>
 	</properties>
@@ -28,11 +33,36 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${javax.servlet.api.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${com.h2database.version}</version>
+		</dependency>
 	
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${org.springframework.data.version}</version>
+		</dependency>
+		
+		<!-- Database dependencies -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${org.hibernate.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${com.mchange.c3p0.version}</version>
 		</dependency>
 	
 		<dependency>
