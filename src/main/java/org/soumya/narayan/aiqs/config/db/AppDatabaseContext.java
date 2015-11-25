@@ -19,7 +19,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "org.soumya.narayan.aiqs.repo" })
+@EnableJpaRepositories(basePackages = { "org.soumya.narayan.aiqs.repo" }, entityManagerFactoryRef="aiqsEntityManager", transactionManagerRef="aiqsTransactionManager")
 public class AppDatabaseContext {
 	
 	@Bean(name = "aiqsDataSource")

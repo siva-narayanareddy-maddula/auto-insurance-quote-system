@@ -12,11 +12,13 @@
 	<properties>
 
 		<maven.compiler.version>3.3</maven.compiler.version>
+		<maven.war.version>2.1</maven.war.version>
 		<java.version>1.8</java.version>
 
 		<javax.servlet.api.version>3.0.1</javax.servlet.api.version>
 		<org.springframework.version>4.0.4.RELEASE</org.springframework.version>
 		<org.springframework.data.version>1.8.0.RELEASE</org.springframework.data.version>
+		<org.springframework.security.version>4.0.0.RELEASE</org.springframework.security.version>
 		
 		<com.h2database.version>1.4.186</com.h2database.version>
 		<org.hibernate.version>5.0.0.Final</org.hibernate.version>
@@ -43,13 +45,24 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${org.springframework.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
 			<version>${org.springframework.data.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework.security.version}</version>
 		</dependency>
 		
 		<!-- Database dependencies -->
@@ -74,6 +87,19 @@
 	
 	</dependencies>
 	
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>4.1.4.RELEASE</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<build>
 		<finalName>auto-insurance-quote-system</finalName>
 		
@@ -92,9 +118,16 @@
 				</configuration>
 			</plugin>
 		
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven.war.version}</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		
 		</plugins>		
-		
-		
 		
 	</build>
 </project>
