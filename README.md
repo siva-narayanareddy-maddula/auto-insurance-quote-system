@@ -13,18 +13,27 @@ The application should handle logout (close all open database connections, inval
 ---------------------------------------------------------------------------------
 
 US-001 : The user should be able to register to the AIQS application
+
 US-002 : The user should be able to buy insurance quote
+
 US-003 : The user should be able to add driver’s information for a vehicle
+
 US-004 : The user should be able to modify driver’s information for a vehicle
+
 US-005 : The user should be able to delete driver’s information for a vehicle
+
 US-006 : The user should be able to view quote premium information
+
 US-007 : The user should be able to change his/her password
 
 ---------------------------------------------------------------------------------
 
 AD-001 : The administrator should be able to view user quote
+
 AD-002 : The administrator should be able to modify user quote
+
 AD-003 : The administrator should be able to delete user quote
+
 AD-004 : The administrator should be able to change his/her password
 
 
