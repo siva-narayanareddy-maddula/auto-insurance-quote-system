@@ -28,7 +28,8 @@ public class AppDatabaseContext {
 
 		dataSource.setUser("sa");
 		dataSource.setPassword("");
-		dataSource.setJdbcUrl("jdbc:h2:~/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
+		//dataSource.setJdbcUrl("jdbc:h2:~/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
+		dataSource.setJdbcUrl("jdbc:h2:tcp://localhost/~/Desktop/aiqs"); // server Mode
 		dataSource.setDriverClass(org.h2.Driver.class.getName());
 		dataSource.setInitialPoolSize(5);
 		dataSource.setMinPoolSize(5);

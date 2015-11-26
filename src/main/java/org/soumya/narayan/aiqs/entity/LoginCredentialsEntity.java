@@ -13,7 +13,7 @@ public class LoginCredentialsEntity {
 	@Column(name = "USER_ID")
 	private Long userId;
 
-	@Column(name = "PAASSWORD")
+	@Column(name = "PASSWORD")
 	private String password;
 
 	@Column(name = "LOGIN_STATUS")
@@ -24,6 +24,9 @@ public class LoginCredentialsEntity {
 
 	@Column(name = "LOGIN_IP")
 	private String loginIp;
+	
+	@Column(name = "ENABLED")
+	private Boolean enabled;
 
 	public Long getUserId() {
 		return userId;
@@ -65,4 +68,12 @@ public class LoginCredentialsEntity {
 		this.loginIp = loginIp;
 	}
 
+	public Boolean getEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(Boolean enabled) {
+		this.enabled = enabled;
+	}
+	
 }
