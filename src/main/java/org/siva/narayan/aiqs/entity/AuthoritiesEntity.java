@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.entity;
+package org.siva.narayan.aiqs.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,16 +10,16 @@ import javax.persistence.IdClass;
 public class AuthoritiesEntity {
 
 	@Id @Column(name = "USER_ID")
-	private Long userId;
+	private String userId;
 
 	@Id @Column(name = "AUTHORITY")
 	private String authority;
 
-	public Long getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

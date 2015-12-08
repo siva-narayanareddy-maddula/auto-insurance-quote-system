@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.entity;
+package org.siva.narayan.aiqs.entity;
 
 import java.io.Serializable;
 
@@ -6,15 +6,15 @@ public class AuthId implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private Long userId;
+	private String userId;
 
 	private String authority;
 
-	public Long getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

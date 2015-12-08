@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.entity;
+package org.siva.narayan.aiqs.entity;
 
 import java.sql.Timestamp;
 
@@ -11,7 +11,7 @@ public class LoginCredentialsEntity {
 
 	@Id
 	@Column(name = "USER_ID")
-	private Long userId;
+	private String userId;
 
 	@Column(name = "PASSWORD")
 	private String password;
@@ -28,11 +28,11 @@ public class LoginCredentialsEntity {
 	@Column(name = "ENABLED")
 	private Boolean enabled;
 
-	public Long getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 

@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.config.web;
+package org.siva.narayan.aiqs.config.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.config.web.security;
+package org.siva.narayan.aiqs.config.web.security;
 
 import javax.sql.DataSource;
 

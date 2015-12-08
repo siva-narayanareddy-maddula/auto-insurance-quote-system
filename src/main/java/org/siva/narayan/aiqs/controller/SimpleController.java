@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.controller;
+package org.siva.narayan.aiqs.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
