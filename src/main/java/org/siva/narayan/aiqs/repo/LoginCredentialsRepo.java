@@ -1,6 +1,6 @@
-package org.soumya.narayan.aiqs.repo;
+package org.siva.narayan.aiqs.repo;
 
-import org.soumya.narayan.aiqs.entity.LoginCredentialsEntity;
+import org.siva.narayan.aiqs.entity.LoginCredentialsEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

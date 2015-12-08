@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.entity;
+package org.siva.narayan.aiqs.entity;
 
 import java.sql.Timestamp;
 

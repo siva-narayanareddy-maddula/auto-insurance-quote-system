@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.config.web.security;
+package org.siva.narayan.aiqs.config.web.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.config;
+package org.siva.narayan.aiqs.config;
 
 import java.util.EnumSet;
 

@@ -1,4 +1,4 @@
-package org.soumya.narayan.aiqs.config.db;
+package org.siva.narayan.aiqs.config.db;
 
 import java.beans.PropertyVetoException;
 import java.util.Properties;
@@ -19,7 +19,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "org.soumya.narayan.aiqs.repo" }, entityManagerFactoryRef="aiqsEntityManager", transactionManagerRef="aiqsTransactionManager")
+@EnableJpaRepositories(basePackages = { "org.siva.narayan.aiqs.repo" }, entityManagerFactoryRef="aiqsEntityManager", transactionManagerRef="aiqsTransactionManager")
 public class AppDatabaseContext {
 	
 	@Bean(name = "aiqsDataSource")
@@ -28,7 +28,8 @@ public class AppDatabaseContext {
 
 		dataSource.setUser("sa");
 		dataSource.setPassword("");
-		dataSource.setJdbcUrl("jdbc:h2:~/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
+		//dataSource.setJdbcUrl("jdbc:h2:~/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
+		dataSource.setJdbcUrl("jdbc:h2:tcp://localhost/~/Desktop/aiqs");
 		dataSource.setDriverClass(org.h2.Driver.class.getName());
 		dataSource.setInitialPoolSize(5);
 		dataSource.setMinPoolSize(5);
@@ -51,7 +52,7 @@ public class AppDatabaseContext {
 			@Qualifier("aiqsDataSource") ComboPooledDataSource aiqsDataSource,
 			@Qualifier("aiqsJpaVendorAdapter") JpaVendorAdapter aiqsJpaVendorAdapter) {
 		final LocalContainerEntityManagerFactoryBean entityManager = new LocalContainerEntityManagerFactoryBean();
-		entityManager.setPackagesToScan("org.soumya.narayan.aiqs.entity");
+		entityManager.setPackagesToScan("org.siva.narayan.aiqs.entity");
 		entityManager.setDataSource(aiqsDataSource);
 		entityManager.setJpaVendorAdapter(aiqsJpaVendorAdapter);
 		return entityManager;

@@ -1,10 +1,10 @@
-package org.soumya.narayan.aiqs.config;
+package org.siva.narayan.aiqs.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = { "org.soumya.narayan.aiqs" })
+@ComponentScan(basePackages = { "org.siva.narayan.aiqs" })
 public class AppContext {
 
 }
