@@ -12,7 +12,7 @@ public class WebAppConfig extends WebMvcConfigurationSupport {
 	
 	@Override
 	protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/resource/**").addResourceLocations("/resource/");
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	}
 	
 	@Bean
