@@ -36,7 +36,7 @@ public class AppDatabaseContext {
 
 		dataSource.setUser("sa");
 		dataSource.setPassword("");
-//		dataSource.setJdbcUrl("jdbc:h2:~/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
+//		dataSource.setJdbcUrl("jdbc:h2:/Users/sivanarayana/Desktop/aiqs;DB_CLOSE_DELAY=-1;");// AUTO_SERVER=TRUE
 		dataSource.setJdbcUrl("jdbc:h2:tcp://localhost/~/Desktop/aiqs"); // server Mode
 		dataSource.setDriverClass(org.h2.Driver.class.getName());
 		dataSource.setInitialPoolSize(5);
@@ -47,8 +47,6 @@ public class AppDatabaseContext {
 	}
 	
 
-	//FIXME:: when u run for the first time, comment this @Bean annotation
-	//FIXME:: when u run for the second time onwards, u can uncomment
 	@Bean(name = "appDataSourceInitializer") // bean configuration :: 
 	public DataSourceInitializer dataSourceInitializer(@Qualifier("aiqsDataSource") ComboPooledDataSource aiqsDataSource) {
 		return new DataSourceInitializer() {{

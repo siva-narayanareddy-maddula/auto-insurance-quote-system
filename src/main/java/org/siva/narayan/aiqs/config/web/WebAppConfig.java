@@ -18,7 +18,7 @@ public class WebAppConfig extends WebMvcConfigurationSupport {
 	@Bean
 	public ViewResolver viewResolver() {
 		return new InternalResourceViewResolver() {{
-			setPrefix("/WEB-INF/");
+			setPrefix("/WEB-INF/views/");
 			setSuffix(".jsp");
 		}};
 	}
