@@ -28,7 +28,7 @@ public class AppSecurityContext extends WebSecurityConfigurerAdapter {
 	}
 
 	@Autowired
-	protected void configureGlobalUsers(AuthenticationManagerBuilder auth) throws Exception {
+	public void configureGlobalUsers(AuthenticationManagerBuilder auth) throws Exception {
 		for (final String userPrincipal : superUsers.split("&")) {
 			final String userDetails[] = userPrincipal.split(":");
 			if(userDetails.length > 0) {
@@ -41,5 +41,5 @@ public class AppSecurityContext extends WebSecurityConfigurerAdapter {
 			}
 		}
 	}
-
 }
+
